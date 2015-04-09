@@ -23,7 +23,9 @@ describe('triangleChecker', function() {
         it("checks to see if a triangle is an isoceles Triangle", function() {
         expect(triangleChecker(3,2,2)).to.equal("This is an isosceles");
     });
-
+        it("checks to see if a triangle is an scalene Triangle", function() {
+        expect(triangleChecker(30,20,32)).to.equal("This is a scalene");
+    });
 
 
   
