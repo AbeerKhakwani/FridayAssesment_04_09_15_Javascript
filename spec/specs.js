@@ -1,22 +1,7 @@
 describe('Scrabble', function() {
-    it("checks to see if one letter a returns 1 point", function() {
-        expect(Scrabble("a")).to.equal(1);
+    it("checks to see if a triangle can even be formed with the three sides", function() {
+        expect(Scrabble(2,2,8)).to.equal("Please enter sides that make a triangle");
     });
-    it("checks to see if a 2 point letter returns 2 points", function() {
-        expect(Scrabble("b")).to.equal(3);
-    });
-   it("checks to see if a 3 point letter and a 1 point letter returns 4 points", function() {
-        expect(Scrabble("am")).to.equal(4);
-    });
-    it("checks to see if a 3 point letter and a 1 point letter returns 4 points", function() {
-        expect(Scrabble("ab")).to.equal(4);
-    });
-       it("checks to see if a 7  point word returns 7 points", function() {
-        expect(Scrabble("Abeer")).to.equal(7);
-    });
-
-
-
-
+  
     
 });
