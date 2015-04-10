@@ -30,3 +30,31 @@ var triangleChecker = function(side1, side2, side3)
 
     return returnString;
 }
+
+
+$(function(){
+  $("form#triangle_form").submit(function(event){
+    var side1= $("input#side1").val();
+    var side2= $("input#side2").val();
+    var side3= $("input#side3").val();
+    
+    var result = triangleChecker(side1,side2,side3);
+
+    console.log("result is returning "+ result)
+
+    $(".checked").text(result);
+
+    $("#result").show();
+
+
+
+  event.preventDefault();
+
+
+
+   })
+
+
+
+
+});
